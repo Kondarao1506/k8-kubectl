@@ -4,7 +4,7 @@ metadata:
  name: pod-example
 spec:
   containers:
-  - name: my_nginx
+  - name: my-nginx
     image: nginx
 
 #     apiVersion: v1
