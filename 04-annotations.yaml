@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: anotation
+  labels:
+   myapp: anotation
+  annotations:
+    owner: "pavan"
+    git-commmit: "numberoftimes"
+spec:
+  containers:
+  - name: nginx-anotation
+    image: nginx
+    
