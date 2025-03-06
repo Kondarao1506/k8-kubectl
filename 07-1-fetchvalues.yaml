@@ -4,7 +4,7 @@ metadata:
   name: configmapdemo
 spec:
   containers:
-  - name: config-Map
+  - name: config-map
     image: nginx
     env:
     - name: Courses
