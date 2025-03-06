@@ -4,5 +4,4 @@ metadata:
   name: configurationfile
 data:
   course: devops
-  duration: "hours"
-  
+  duration: "120hours"
