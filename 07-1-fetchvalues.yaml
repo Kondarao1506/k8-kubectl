@@ -1,10 +1,10 @@
 apiVersion: v1
 kind: Pod
 metadata: 
-  name: configMapDemo
+  name: configmapdemo
 spec:
   containers:
-  - name: configMap
+  - name: config-Map
     image: nginx
     env:
     - name: Courses
