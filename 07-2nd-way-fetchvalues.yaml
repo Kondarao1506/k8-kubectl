@@ -7,7 +7,7 @@ spec:
   - name: pod-configuration
     image: nginx
     envFrom:
-     - configMapRef:
+      configMapRef:
         name: configurationfile
 
    
