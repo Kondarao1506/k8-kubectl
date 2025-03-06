@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Pod
+metadata: 
+  name: configMapDemo
+spec:
+  containers:
+  - name: configMap
+    image: nginx
+  env:
+  - name: Courses
+    valueFrom:
+      configMapKeyRef:
+        name: configurationfile
+        key: course
+  - name: durations
+    valueFrom:
+      configMapKeyRef:
+        name: configurationfile
+        key: duration
