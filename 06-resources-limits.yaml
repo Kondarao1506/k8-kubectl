@@ -1,0 +1,26 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: resource-limits
+  labels:
+    cpu: 120m
+    memory: 100Mi
+  annotations: 
+    owner: "pavan"
+    about: "resources"
+spec:
+  containers:
+  - name: resources-utilization
+    image: nginx
+    env:
+    - name: cpu-size
+      value: 120m
+    - name: memory
+      value: 100Mi
+    resources:
+      requests:
+        cpu: 100m
+        memory: 68Mi
+      limits:
+        cpu: 120m
+        memory: 100Mi
